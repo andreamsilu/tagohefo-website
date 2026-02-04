@@ -116,7 +116,7 @@ export default function LeadershipPage() {
               <div className="bg-[#f8fafc] rounded-2xl p-8 border border-[#dbe6e5] flex flex-col items-center">
                 {/* Board Level */}
                 <div className="flex flex-col items-center gap-2 mb-8 relative z-10">
-                  <div className="bg-white border border-[#dbe6e5] text-[#111817] px-8 py-3 rounded-lg font-bold shadow-sm">
+                  <div className="bg-white border border-[#dbe6e5] text-[#111817] px-8 py-3 rounded-lg font-bold shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-md cursor-default">
                     Board of Directors
                   </div>
                   <div className="text-xs text-[#618986]">Governance & Strategy</div>
@@ -127,7 +127,7 @@ export default function LeadershipPage() {
 
                 {/* Executive Level */}
                 <div className="flex flex-col items-center gap-2 mb-8 relative z-10">
-                  <div className="bg-white border border-[#dbe6e5] text-[#111817] px-8 py-3 rounded-lg font-bold shadow-sm">
+                  <div className="bg-white border border-[#dbe6e5] text-[#111817] px-8 py-3 rounded-lg font-bold shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-md cursor-default">
                     Executive Director
                   </div>
                   <div className="text-xs text-[#618986]">Operations & Implementation</div>
@@ -146,19 +146,19 @@ export default function LeadershipPage() {
                 {/* Departments */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl text-center -mt-4">
                    <div className="flex flex-col items-center">
-                      <div className="bg-white border border-[#dbe6e5] text-[#111817] px-6 py-3 rounded-lg font-bold shadow-sm w-full">
+                      <div className="bg-white border border-[#dbe6e5] text-[#111817] px-6 py-3 rounded-lg font-bold shadow-sm w-full transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-md cursor-default">
                         Programs
                       </div>
                       <p className="text-xs text-[#618986] mt-2">Health, GBV, Education</p>
                    </div>
                    <div className="flex flex-col items-center">
-                      <div className="bg-white border border-[#dbe6e5] text-[#111817] px-6 py-3 rounded-lg font-bold shadow-sm w-full">
+                      <div className="bg-white border border-[#dbe6e5] text-[#111817] px-6 py-3 rounded-lg font-bold shadow-sm w-full transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-md cursor-default">
                         Finance & Admin
                       </div>
                       <p className="text-xs text-[#618986] mt-2">HR, Compliance, Grants</p>
                    </div>
                    <div className="flex flex-col items-center">
-                      <div className="bg-white border border-[#dbe6e5] text-[#111817] px-6 py-3 rounded-lg font-bold shadow-sm w-full">
+                      <div className="bg-white border border-[#dbe6e5] text-[#111817] px-6 py-3 rounded-lg font-bold shadow-sm w-full transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-md cursor-default">
                         M&E and Learning
                       </div>
                       <p className="text-xs text-[#618986] mt-2">Data, Impact, Reporting</p>

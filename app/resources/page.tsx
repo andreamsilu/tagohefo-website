@@ -144,7 +144,7 @@ export default function ResourcesPage() {
             
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
-                Resource & <br/><span className="text-primary">Document Center</span>
+                Publication & <br/><span className="text-primary">Resources</span>
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed font-medium">
                 Access our official documents, annual reports, strategic plans, and educational resources. 
