@@ -171,7 +171,7 @@ export default function AboutPage() {
 
         {/* Registration Info Footer */}
         <FadeIn>
-          <div className="bg-[#111817] rounded-2xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+          <div className="bg-[#f0f4f4] rounded-2xl p-8 md:p-12 text-center text-[#111817] relative overflow-hidden">
             <div className="relative z-10 flex flex-col items-center gap-4">
               <span className="material-symbols-outlined text-4xl text-primary">verified</span>
               <p className="text-lg md:text-xl font-medium max-w-2xl">
@@ -180,7 +180,7 @@ export default function AboutPage() {
               </p>
             </div>
             {/* Background decoration */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/10 to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/5 to-transparent pointer-events-none"></div>
           </div>
         </FadeIn>
       </div>
