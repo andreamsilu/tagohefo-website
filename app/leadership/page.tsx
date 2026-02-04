@@ -116,7 +116,7 @@ export default function LeadershipPage() {
               <div className="bg-[#f8fafc] rounded-2xl p-8 border border-[#dbe6e5] flex flex-col items-center">
                 {/* Board Level */}
                 <div className="flex flex-col items-center gap-2 mb-8 relative z-10">
-                  <div className="bg-[#111817] text-white px-8 py-3 rounded-lg font-bold shadow-md">
+                  <div className="bg-white border border-[#dbe6e5] text-[#111817] px-8 py-3 rounded-lg font-bold shadow-sm">
                     Board of Directors
                   </div>
                   <div className="text-xs text-[#618986]">Governance & Strategy</div>
@@ -127,7 +127,7 @@ export default function LeadershipPage() {
 
                 {/* Executive Level */}
                 <div className="flex flex-col items-center gap-2 mb-8 relative z-10">
-                  <div className="bg-primary text-[#111817] px-8 py-3 rounded-lg font-bold shadow-md border border-primary/20">
+                  <div className="bg-white border border-[#dbe6e5] text-[#111817] px-8 py-3 rounded-lg font-bold shadow-sm">
                     Executive Director
                   </div>
                   <div className="text-xs text-[#618986]">Operations & Implementation</div>
