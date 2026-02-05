@@ -1,0 +1,186 @@
+
+/* Ayro UI Inspired Styles */
+:root {
+  --primary: #2E8B3C;
+  --secondary: #2F6FDB;
+  --warning: #E3B341;
+  --danger: #D97706;
+  --dark: #2B2B2B;
+  --body-color: #637381;
+  --white: #ffffff;
+  --light: #F9FAF7;
+  --border-color: #E7E7E7;
+
+  /* Bootstrap Color Overrides */
+  --bs-primary: #2E8B3C;
+  --bs-secondary: #2F6FDB;
+  --bs-warning: #E3B341;
+  --bs-danger: #D97706;
+  --bs-dark: #2B2B2B;
+  --bs-light: #F9FAF7;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--body-color);
+  background-color: var(--light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #256f30;
+  border-color: #256f30;
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(46, 139, 60, 0.2);
+}
+
+/* Navbar */
+.navbar-area {
+  background-color: var(--white);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark) !important;
+}
+
+.nav-link {
+  color: var(--dark) !important;
+  font-weight: 500;
+  padding: 10px 20px !important;
+  transition: all 0.3s ease-out;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Hero Area */
+.hero-area {
+  padding: 150px 0 100px;
+  background-color: var(--white);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Services / Features */
+.single-service {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  padding: 40px 30px;
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.single-service:hover {
+  border-color: transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+.single-service .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(217, 119, 6, 0.1);
+  color: var(--danger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease-out;
+}
+
+.single-service:hover .icon {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.single-service h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer-area {
+  background-color: var(--dark);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.footer-widget h3 {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links li a {
+  color: #b0b0b0;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: var(--primary);
+}
