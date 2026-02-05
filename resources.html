@@ -72,27 +72,27 @@
     </nav>
 
     <!-- Hero Section (Full Width) -->
-    <div class="position-relative text-white pt-5 pb-5" style="background-color: #111817; overflow: hidden;">
+    <div class="position-relative text-white pt-5 pb-5 page-hero" style="background-color: #111817; overflow: hidden;">
         <div class="position-absolute w-100 h-100 top-0 start-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPEP5ES5AhrbefwVK_vZckmqicoTp3XkjO4K0L-_Qslp8tcWy3gMakwuuxOD2gsbFPD9x7bgJ2U2LNLM5hcpgBlkXRvNked84E3AHhgzd8H6RMS6az1qDXPx5IC8xJEdThqQrET8NOyKVaWMGZAblgWJlIX3mO6vFzng1LC49JZnNmCOm3okH7JxVNpBcJY_ME4o6T9mkD76VovlIcFvn2zeZPv_70Hyn4L2DrL7aBKD4DOigbir_5UQBH8knvbd1qBTLVymryi6g'); background-size: cover; background-position: center; opacity: 0.3;"></div>
         <div class="position-absolute w-100 h-100 top-0 start-0" style="background: linear-gradient(to bottom, rgba(17, 24, 23, 0.9), transparent);"></div>
         
         <div class="container position-relative z-1 pt-4 pb-5">
             <nav aria-label="breadcrumb" class="mb-4 fade-in">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb justify-content-center justify-content-lg-start">
                     <li class="breadcrumb-item"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
                     <li class="breadcrumb-item active text-white" aria-current="page">Resource Center</li>
                 </ol>
             </nav>
             
             <div class="row">
-                <div class="col-lg-8 fade-in">
+                <div class="col-lg-8 fade-in text-center text-lg-start mx-auto mx-lg-0">
                     <h1 class="display-3 text-light fw-bold mb-4">Publication & <br/><span class="text-primary">Resources</span></h1>
                     <p class="fs-5 text-white mb-5">
                         Access our official documents, annual reports, strategic plans, and educational resources. Transparency and knowledge sharing are at the core of our mission.
                     </p>
                     
                     <!-- Search -->
-                    <div class="position-relative shadow-lg rounded-4 overflow-hidden mb-5">
+                    <div class="position-relative shadow-lg rounded-4 overflow-hidden mb-5 mx-auto mx-lg-0">
                         <span class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white-50"></span>
                         <input type="text" id="documentSearch" class="form-control form-control-lg bg-white bg-opacity-10 border-white border-opacity-25 text-white ps-5 py-3" placeholder="Search for documents..." style="backdrop-filter: blur(5px);">
                     </div>
@@ -286,7 +286,7 @@
                         <div class="flex-grow-1">
                             <h5 class="fw-bold mb-2 text-dark">${doc.title}</h5>
                             <p class="text-secondary small mb-3 line-clamp-2">${doc.description}</p>
-                            <div class="d-flex align-items-center gap-3 text-muted small fw-medium">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 text-muted small fw-medium">
                                 <span><i class="bi bi-calendar me-1"></i> ${doc.date}</span>
                                 <span><i class="bi bi-hdd me-1"></i> ${doc.size}</span>
                             </div>
