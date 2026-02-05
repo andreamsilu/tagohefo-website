@@ -15,13 +15,19 @@ export default function AboutPage() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#111817]/90 via-transparent to-[#111817]/30"></div>
           <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 className="text-white text-4xl md:text-6xl font-black tracking-tight mb-6 font-display">
-              About TAGOHEFO
-            </h1>
-            <p className="text-white/90 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mx-auto">
-              Empowering communities for a better future through gender equity and
-              sustainable health.
-            </p>
+            <FadeInStagger>
+              <FadeIn>
+                <h1 className="text-white text-4xl md:text-6xl font-black tracking-tight mb-6 font-display">
+                  About TAGOHEFO
+                </h1>
+              </FadeIn>
+              <FadeIn>
+                <p className="text-white/90 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mx-auto">
+                  Empowering communities for a better future through gender equity and
+                  sustainable health.
+                </p>
+              </FadeIn>
+            </FadeInStagger>
           </div>
         </div>
       </FadeIn>

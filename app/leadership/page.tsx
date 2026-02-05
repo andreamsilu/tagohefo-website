@@ -81,13 +81,19 @@ export default function LeadershipPage() {
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent"></div>
                 <div className="relative p-8 md:p-12 z-10 max-w-2xl">
-                  <h1 className="text-[#111817] text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-                    Leadership & Governance
-                  </h1>
-                  <p className="text-[#0f766e] text-lg font-medium">
-                    Committed to integrity, gender equality, and sustainable
-                    health impact in Tanzania.
-                  </p>
+                  <FadeInStagger>
+                    <FadeIn>
+                      <h1 className="text-[#111817] text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                        Leadership & Governance
+                      </h1>
+                    </FadeIn>
+                    <FadeIn>
+                      <p className="text-[#0f766e] text-lg font-medium">
+                        Committed to integrity, gender equality, and sustainable
+                        health impact in Tanzania.
+                      </p>
+                    </FadeIn>
+                  </FadeInStagger>
                 </div>
               </div>
             </div>

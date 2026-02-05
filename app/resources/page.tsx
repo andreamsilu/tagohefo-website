@@ -133,39 +133,47 @@ export default function ResourcesPage() {
         </div>
 
         <div className="relative w-full max-w-[960px] mx-auto z-10">
-          <FadeIn>
-            <div className="flex flex-wrap gap-2 mb-8 text-white/80">
-              <Link href="/" className="hover:text-primary transition-colors">
-                Home
-              </Link>
-              <span>/</span>
-              <span className="text-white font-medium">Resource Center</span>
-            </div>
+          <FadeInStagger>
+            <FadeIn>
+              <div className="flex flex-wrap gap-2 mb-8 text-white/80">
+                <Link href="/" className="hover:text-primary transition-colors">
+                  Home
+                </Link>
+                <span>/</span>
+                <span className="text-white font-medium">Resource Center</span>
+              </div>
+            </FadeIn>
             
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
-                Publication & <br/><span className="text-primary">Resources</span>
-              </h1>
-              <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed font-medium">
-                Access our official documents, annual reports, strategic plans, and educational resources. 
-                Transparency and knowledge sharing are at the core of our mission.
-              </p>
+              <FadeIn>
+                <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+                  Publication & <br/><span className="text-primary">Resources</span>
+                </h1>
+              </FadeIn>
+              <FadeIn>
+                <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed font-medium">
+                  Access our official documents, annual reports, strategic plans, and educational resources. 
+                  Transparency and knowledge sharing are at the core of our mission.
+                </p>
+              </FadeIn>
 
               {/* Search Bar */}
-              <div className="relative max-w-lg shadow-2xl">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <span className="material-symbols-outlined text-white/50">search</span>
+              <FadeIn>
+                <div className="relative max-w-lg shadow-2xl">
+                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <span className="material-symbols-outlined text-white/50">search</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search for documents..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white/20 transition-all backdrop-blur-md"
+                  />
                 </div>
-                <input
-                  type="text"
-                  placeholder="Search for documents..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white/20 transition-all backdrop-blur-md"
-                />
-              </div>
+              </FadeIn>
             </div>
-          </FadeIn>
+          </FadeInStagger>
         </div>
       </section>
 

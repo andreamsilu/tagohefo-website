@@ -16,27 +16,33 @@ export default function ContactPage() {
             }}
           >
             <div className="flex p-8">
-              <h1 className="text-white text-5xl font-black leading-tight tracking-tight font-display">
-                Contact Us
-              </h1>
+              <FadeIn>
+                <h1 className="text-white text-5xl font-black leading-tight tracking-tight font-display">
+                  Contact Us
+                </h1>
+              </FadeIn>
             </div>
           </div>
         </div>
       </FadeIn>
       {/* Page Intro */}
-      <FadeIn>
+      <FadeInStagger>
         <div className="max-w-[1200px] mx-auto py-10 px-4">
           <div className="flex flex-col gap-3">
-            <p className="text-[#111817] text-4xl font-black leading-tight tracking-[-0.033em] font-display">
-              Get in Touch
-            </p>
-            <p className="text-[#4a6865] text-lg font-normal leading-normal max-w-2xl">
-              We are here to support GBV prevention and good health in Tanzania.
-              Reach out to our team for partnerships, support, or inquiries.
-            </p>
+            <FadeIn>
+              <p className="text-[#111817] text-4xl font-black leading-tight tracking-[-0.033em] font-display">
+                Get in Touch
+              </p>
+            </FadeIn>
+            <FadeIn>
+              <p className="text-[#4a6865] text-lg font-normal leading-normal max-w-2xl">
+                We are here to support GBV prevention and good health in Tanzania.
+                Reach out to our team for partnerships, support, or inquiries.
+              </p>
+            </FadeIn>
           </div>
         </div>
-      </FadeIn>
+      </FadeInStagger>
       {/* Contact Grid */}
       <FadeInStagger>
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 pb-20">

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,41 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-solid border-[#f0f4f4] bg-white/90 backdrop-blur-md px-4 py-3">
+    <>
+      {/* Top Bar (Ribbon) */}
+      <div className="w-full bg-[#B8865B] text-white py-2 px-4 hidden md:block">
+        <div className="mx-auto max-w-[1200px] flex items-center justify-between text-sm font-medium">
+          {/* Contact Info */}
+          <div className="flex items-center gap-6">
+            <a href="mailto:info@tagohefo.org" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+              <FaEnvelope className="text-[16px]" />
+              <span>info@tagohefo.org</span>
+            </a>
+            <a href="tel:+255743330373" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+              <FaPhoneAlt className="text-[16px]" />
+              <span>+255 743 330 373</span>
+            </a>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4">
+            <a href="#" aria-label="Facebook" className="hover:opacity-80 transition-opacity">
+              <FaFacebookF className="text-[18px]" />
+            </a>
+            <a href="#" aria-label="Twitter" className="hover:opacity-80 transition-opacity">
+              <FaTwitter className="text-[18px]" />
+            </a>
+            <a href="#" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
+              <FaInstagram className="text-[18px]" />
+            </a>
+            <a href="#" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
+              <FaLinkedinIn className="text-[18px]" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <header className="sticky top-0 z-50 w-full border-b border-solid border-[#f0f4f4] bg-white/90 backdrop-blur-md px-4 py-3">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3 z-50 relative">
           <div className="text-primary size-8">
@@ -151,5 +186,6 @@ export function Header() {
         </AnimatePresence>
       </div>
     </header>
+    </>
   );
 }
