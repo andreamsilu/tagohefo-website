@@ -164,7 +164,7 @@
             <div class="row g-4">
                 
                 <!-- Program 1: GBV -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 fade-in-up">
                     <div class="card h-100 border-light shadow-sm p-4 rounded-4 hover-shadow transition-all group">
                         <div class="d-inline-flex align-items-center justify-content-center bg-danger bg-opacity-10 text-danger rounded-3 mb-4 transition-colors" style="width: 64px; height: 64px;">
                             <span class="material-symbols-outlined fs-2">shield_with_heart</span>
@@ -177,7 +177,7 @@
                 </div>
 
                 <!-- Program 2: Women & Children -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 fade-in-up delay-100">
                     <div class="card h-100 border-light shadow-sm p-4 rounded-4 hover-shadow transition-all group">
                         <div class="d-inline-flex align-items-center justify-content-center bg-info bg-opacity-10 text-info rounded-3 mb-4 transition-colors" style="width: 64px; height: 64px;">
                             <span class="material-symbols-outlined fs-2">family_restroom</span>
@@ -190,7 +190,7 @@
                 </div>
 
                 <!-- Program 3: Health -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 fade-in-up delay-200">
                     <div class="card h-100 border-light shadow-sm p-4 rounded-4 hover-shadow transition-all group">
                         <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-3 mb-4 transition-colors" style="width: 64px; height: 64px;">
                             <span class="material-symbols-outlined fs-2">vital_signs</span>
@@ -203,7 +203,7 @@
                 </div>
 
                 <!-- Program 4: Governance -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 fade-in-up">
                     <div class="card h-100 border-light shadow-sm p-4 rounded-4 hover-shadow transition-all group">
                         <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-3 mb-4 transition-colors" style="width: 64px; height: 64px;">
                             <span class="material-symbols-outlined fs-2">gavel</span>
@@ -216,7 +216,7 @@
                 </div>
 
                 <!-- Program 5: Environmental -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 fade-in-up delay-100">
                     <div class="card h-100 border-light shadow-sm p-4 rounded-4 hover-shadow transition-all group">
                         <div class="d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success rounded-3 mb-4 transition-colors" style="width: 64px; height: 64px;">
                             <span class="material-symbols-outlined fs-2">eco</span>
@@ -229,7 +229,7 @@
                 </div>
 
                 <!-- Program 6: Economic -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 fade-in-up delay-200">
                     <div class="card h-100 border-light shadow-sm p-4 rounded-4 hover-shadow transition-all group">
                         <div class="d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning rounded-3 mb-4 transition-colors" style="width: 64px; height: 64px;">
                             <span class="material-symbols-outlined fs-2">payments</span>
@@ -245,7 +245,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="fade-in">
+        <section class="fade-in-up">
             <div class="bg-primary text-white rounded-4 p-5 position-relative overflow-hidden">
                 <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
                 <div class="position-relative z-2 row align-items-center">
@@ -359,5 +359,27 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.fade-in-up');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
