@@ -336,9 +336,13 @@ footer a:hover {
     }
 
     /* Organizational Chart Mobile Layout */
-    .org-connector-vertical,
     .org-connector-horizontal {
         display: none !important;
+    }
+    
+    /* Adjust vertical connector for mobile if needed */
+    .org-connector-vertical {
+        display: block !important;
     }
     
     /* Ensure cards stack nicely with spacing */
