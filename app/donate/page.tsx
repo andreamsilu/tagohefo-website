@@ -123,49 +123,49 @@ export default function DonatePage() {
       </section>
 
       {/* Impact Statement */}
-      <section className="w-full bg-[#111817] text-white py-20">
+      <section className="w-full bg-[#f0f4f4] py-20 border-t border-[#dbe6e5]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <FadeIn>
               <div>
-                <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight">
+                <h2 className="text-[#111817] text-3xl md:text-5xl font-black mb-6 leading-tight">
                   Where Your Money Goes
                 </h2>
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <div className="size-12 rounded-full bg-primary/20 text-primary flex-shrink-0 flex items-center justify-center">
+                    <div className="size-12 rounded-full bg-primary/10 text-primary flex-shrink-0 flex items-center justify-center">
                       <span className="material-symbols-outlined">school</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">Education & Training</h3>
-                      <p className="text-white/70">Funding workshops, educational materials, and vocational training for women and youth.</p>
+                      <h3 className="text-[#111817] text-xl font-bold mb-2">Education & Training</h3>
+                      <p className="text-[#618986]">Funding workshops, educational materials, and vocational training for women and youth.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="size-12 rounded-full bg-primary/20 text-primary flex-shrink-0 flex items-center justify-center">
+                    <div className="size-12 rounded-full bg-primary/10 text-primary flex-shrink-0 flex items-center justify-center">
                       <span className="material-symbols-outlined">medical_services</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">Health Services</h3>
-                      <p className="text-white/70">Supporting medical camps, reproductive health resources, and hygiene kits.</p>
+                      <h3 className="text-[#111817] text-xl font-bold mb-2">Health Services</h3>
+                      <p className="text-[#618986]">Supporting medical camps, reproductive health resources, and hygiene kits.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="size-12 rounded-full bg-primary/20 text-primary flex-shrink-0 flex items-center justify-center">
+                    <div className="size-12 rounded-full bg-primary/10 text-primary flex-shrink-0 flex items-center justify-center">
                       <span className="material-symbols-outlined">volunteer_activism</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">Direct Support</h3>
-                      <p className="text-white/70">Providing emergency assistance, legal aid, and counseling for GBV survivors.</p>
+                      <h3 className="text-[#111817] text-xl font-bold mb-2">Direct Support</h3>
+                      <p className="text-[#618986]">Providing emergency assistance, legal aid, and counseling for GBV survivors.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </FadeIn>
             <FadeIn>
-              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-                <h3 className="text-2xl font-bold mb-4">Have Questions?</h3>
-                <p className="text-white/70 mb-6">
+              <div className="bg-white p-8 rounded-2xl border border-[#dbe6e5] shadow-lg">
+                <h3 className="text-[#111817] text-2xl font-bold mb-4">Have Questions?</h3>
+                <p className="text-[#618986] mb-6">
                   If you'd like to discuss a large donation, partnership, or specific program sponsorship, please contact our finance team.
                 </p>
                 <Link href="/contact" className="inline-flex items-center justify-center rounded-lg h-12 px-8 bg-primary text-[#102220] font-bold hover:brightness-110 transition-all w-full md:w-auto">
