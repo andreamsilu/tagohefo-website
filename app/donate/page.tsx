@@ -64,9 +64,13 @@ export default function DonatePage() {
                   <h3 className="text-2xl font-bold text-[#111817]">Bank Transfer</h3>
                 </div>
                 <div className="space-y-4">
-                  <div className="bg-white p-4 rounded-xl border border-gray-100">
-                    <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">Bank Name</p>
-                    <p className="text-[#111817] font-semibold text-lg">CRDB Bank</p>
+                  <div className="bg-white p-4 rounded-xl border border-gray-100 flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">Bank Name</p>
+                      <p className="text-[#111817] font-semibold text-lg">CRDB Bank</p>
+                    </div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="https://logo.clearbit.com/crdbbank.co.tz" alt="CRDB Bank" className="h-8 w-auto object-contain" />
                   </div>
                   <div className="bg-white p-4 rounded-xl border border-gray-100">
                     <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">Account Name</p>
@@ -99,21 +103,24 @@ export default function DonatePage() {
                       <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">M-Pesa</p>
                       <p className="text-[#111817] font-mono text-xl font-bold">+255 743 330 373</p>
                     </div>
-                    <div className="h-10 w-16 bg-red-600 rounded flex items-center justify-center text-white font-bold text-xs">Vodacom</div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="https://logo.clearbit.com/vodacom.co.tz" alt="M-Pesa" className="h-10 w-auto object-contain rounded" />
                   </div>
                   <div className="bg-white p-4 rounded-xl border border-gray-100 flex items-center justify-between">
                     <div>
                       <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">Tigo Pesa</p>
                       <p className="text-[#111817] font-mono text-xl font-bold">+255 713 XXX XXX</p>
                     </div>
-                    <div className="h-10 w-16 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-xs">Tigo</div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="https://logo.clearbit.com/tigo.co.tz" alt="Tigo Pesa" className="h-10 w-auto object-contain rounded" />
                   </div>
                   <div className="bg-white p-4 rounded-xl border border-gray-100 flex items-center justify-between">
                     <div>
                       <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">Airtel Money</p>
                       <p className="text-[#111817] font-mono text-xl font-bold">+255 784 XXX XXX</p>
                     </div>
-                    <div className="h-10 w-16 bg-red-500 rounded flex items-center justify-center text-white font-bold text-xs">Airtel</div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="https://logo.clearbit.com/airtel.co.tz" alt="Airtel Money" className="h-10 w-auto object-contain rounded" />
                   </div>
                 </div>
               </div>

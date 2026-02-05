@@ -7,7 +7,8 @@
   --color-background-light: #f6f8f8;
   --color-background-dark: #102220;
 
-  --font-display: "Manrope", sans-serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-roboto: var(--font-roboto), sans-serif;
 }
 
 :root {
@@ -19,7 +20,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-display), Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), sans-serif;
 }
 
 .material-symbols-outlined {

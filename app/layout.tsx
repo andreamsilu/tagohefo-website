@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
-const manrope = Manrope({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-display",
+  weight: ["400", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -23,14 +31,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={manrope.variable}>
+    <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="bg-white font-display text-[#111817] antialiased">
+      <body className="bg-white font-roboto text-[#111817] antialiased">
         <div className="relative flex min-h-screen flex-col overflow-x-hidden">
           <Header />
 
