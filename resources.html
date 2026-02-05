@@ -106,7 +106,7 @@
         
         <!-- Category Filter -->
         <div class="bg-white p-2 rounded-4 shadow-sm border mb-5 overflow-auto fade-in">
-            <div class="d-flex gap-2 min-w-100" id="categoryFilters">
+            <div class="d-flex gap-2 w-100" id="categoryFilters">
                 <button class="btn btn-primary fw-bold rounded-pill px-4" onclick="filterDocs('All', this)">All</button>
                 <button class="btn btn-light text-secondary fw-medium rounded-pill px-4" onclick="filterDocs('Governance', this)">Governance</button>
                 <button class="btn btn-light text-secondary fw-medium rounded-pill px-4" onclick="filterDocs('Reports', this)">Reports</button>
@@ -276,7 +276,7 @@
             const grid = document.getElementById('documentsGrid');
             grid.innerHTML = docs.map(doc => `
                 <div class="col-lg-6 fade-in">
-                    <div class="bg-white p-4 rounded-4 border hover-shadow transition-all h-100 d-flex gap-4 align-items-start">
+                    <div class="bg-white p-4 rounded-4 border hover-shadow transition-all h-100 d-flex gap-4 align-items-start resource-card-mobile">
                         <div class="d-flex flex-column align-items-center gap-2">
                              <div class="bg-primary-light text-primary rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                                 <span class="bi bi-file-earmark-pdf fs-2"></span>

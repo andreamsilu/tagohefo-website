@@ -257,3 +257,105 @@ footer a:hover {
 .hover-underline:hover::after {
     width: 100%;
 }
+
+/* Organizational Chart Styles */
+.org-connector-vertical {
+    width: 2px;
+    height: 30px;
+    margin-top: -1.5rem;
+    margin-bottom: 0;
+}
+
+.org-connector-horizontal {
+    max-width: 600px;
+    height: 2px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Typography Adjustments */
+    h1, .display-3, .display-4 {
+        font-size: 2.5rem !important;
+    }
+    
+    .display-6 {
+        font-size: 1.75rem !important;
+    }
+    
+    .lead {
+        font-size: 1rem !important;
+    }
+
+    /* Hero Section Adjustments */
+            .hero-section, 
+            .hero-area,
+            .story-hero,
+            .page-hero,
+            .contact-map,
+            header[style*="height: 400px"] {
+                min-height: 300px !important;
+                height: auto !important;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            /* Fix 1:1 aspect ratio images on mobile to be 16:9 or auto */
+            .mobile-aspect-fix {
+                aspect-ratio: 16/9 !important;
+            }
+            
+            /* Resource Card Mobile Optimization */
+            .resource-card-mobile {
+                flex-direction: column;
+                align-items: center !important;
+                text-align: center;
+            }
+            .resource-card-mobile .flex-grow-1 {
+                width: 100%;
+            }
+            .resource-card-mobile .btn {
+                width: 100%;
+                margin-top: 1rem;
+                border-radius: 5px !important;
+            }
+
+            /* Spacing Adjustments */
+    .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 2.5rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .p-5 {
+        padding: 2rem !important;
+    }
+
+    /* Organizational Chart Mobile Layout */
+    .org-connector-vertical,
+    .org-connector-horizontal {
+        display: none !important;
+    }
+    
+    /* Ensure cards stack nicely with spacing */
+    .row.g-4 > [class*="col-"] {
+        margin-bottom: 1rem;
+    }
+    
+    /* Fix Newsletter Form */
+    footer .newsletter-form button {
+        position: relative !important;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px !important;
+        height: 40px;
+    }
+    
+    footer .newsletter-form input {
+        padding-right: 12px !important; /* Remove padding reserved for button */
+    }
+}
