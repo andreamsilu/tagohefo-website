@@ -118,7 +118,7 @@ export function Header() {
             ))}
           </nav>
           <Link
-            href="/contact"
+            href="/donate"
             className="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-[#102220] text-sm font-bold shadow-lg shadow-primary/20 hover:brightness-105 transition-all"
           >
             Donate
@@ -174,7 +174,7 @@ export function Header() {
                   className="mt-4 w-full max-w-xs"
                 >
                   <Link
-                    href="/contact"
+                    href="/donate"
                     className="flex w-full cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-[#102220] text-lg font-bold shadow-lg shadow-primary/20 hover:brightness-105 transition-all"
                   >
                     Donate Now

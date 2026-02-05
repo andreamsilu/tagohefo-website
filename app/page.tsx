@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <main className="flex-1 flex flex-col items-center bg-white">
       {/* Hero Section */}
-      <section className="w-full px-4 md:px-8 pt-6 pb-12 max-w-[1360px]">
+      <section className="w-full">
         <FadeIn>
           <div className="@container">
-            <div className="relative overflow-hidden rounded-2xl">
+            <div className="relative overflow-hidden">
               <div
                 role="img"
                 aria-label="Tanzanian community members gathered for health awareness training session"
@@ -33,7 +33,7 @@ export default function Home() {
                   </FadeIn>
                   <FadeIn>
                     <div className="flex flex-wrap gap-4 mt-4">
-                      <Link href="/contact" className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-[#102220] text-base font-bold shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
+                      <Link href="/donate" className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-[#102220] text-base font-bold shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
                         Donate Now
                       </Link>
                       <Link href="/contact" className="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-all">
@@ -207,7 +207,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Story 1 */}
               <FadeIn>
-                <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full">
+                <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
                   <div 
                     className="h-64 w-full bg-cover bg-center" 
                     style={{backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgrY-CNOyUUFogDiW1tIwj34QGVwr4QM-F43F9cVGk40uWZPcGgOMAyP0D35Rehiu8v7giWSQnmV8K9F7CDhdpsEVAAWbE7b6-h-3Njk8uYRJpBw7nroGYouIwpAkG3wl7TQhnhcgFjLogM29IvRwcAbeOZzLlGP1CpEFW6qkuoQ_pMxjof3s2MYKqLQ72Uae3y3rYsnGgMvLdKW0sC04pYR5gbjM9I6YoLC0DUaC2SsNw3gpZzo5kVwlOFqROq14-DrIj7-wMzXk')"}}
@@ -230,7 +230,7 @@ export default function Home() {
 
               {/* Story 2 */}
               <FadeIn>
-                <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full">
+                <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
                   <div 
                     className="h-64 w-full bg-cover bg-center" 
                     style={{backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPEP5ES5AhrbefwVK_vZckmqicoTp3XkjO4K0L-_Qslp8tcWy3gMakwuuxOD2gsbFPD9x7bgJ2U2LNLM5hcpgBlkXRvNked84E3AHhgzd8H6RMS6az1qDXPx5IC8xJEdThqQrET8NOyKVaWMGZAblgWJlIX3mO6vFzng1LC49JZnNmCOm3okH7JxVNpBcJY_ME4o6T9mkD76VovlIcFvn2zeZPv_70Hyn4L2DrL7aBKD4DOigbir_5UQBH8knvbd1qBTLVymryi6g')"}}
@@ -253,7 +253,7 @@ export default function Home() {
 
               {/* Story 3 */}
               <FadeIn>
-                <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full">
+                <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
                   <div 
                     className="h-64 w-full bg-cover bg-center" 
                     style={{backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBBiOWab0BBIBlteKKh2Yl_Ag2KFk-Zt8hbhRy2XhscjMqIhgPJGZs0_QRiyT3SWJsAxEDy9scqvzGF1CVp74mRCurwmhgOD2e5CQOkMsC10buQ6ahkS6GkQY99QQKIMQQDlh9qkRrPI8CioSeP40GVTEP62BhYPB-FCuUwX8WFXSdXrN0BdU4t5RYZM7O71ZOTOampaQ8TG3PobEp2O00dLAhUV0y5lGX3fubxSG2UjdlimPdM5I5tqJ9a3srBhOJwPj4LgE95xU')"}}

@@ -200,7 +200,7 @@ export default function ProgramsPage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4 flex-shrink-0">
                 <Link 
-                  href="/contact" 
+                  href="/donate" 
                   className="px-8 py-4 bg-[#111817] text-white rounded-xl font-bold text-lg shadow-lg hover:bg-black hover:scale-105 transition-all flex items-center justify-center gap-2"
                 >
                   <span>Donate Now</span>
