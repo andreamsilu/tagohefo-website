@@ -181,7 +181,7 @@
 <ul class="flex flex-col gap-3 text-sm text-[#618986] dark:text-[#a0bcba]">
 <li class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-xl">location_on</span>
-<span>Songea - Ruvuma, Tanzania</span>
+<span>Lizaboni Street, Songea - Ruvuma, Tanzania</span>
 </li>
 <li class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-xl">call</span>

@@ -118,7 +118,7 @@ export default function ContactPage() {
                     <p className="text-[#618986]">
                       Makole Street,
                       <br />
-                      Songea - Ruvuma, Tanzania
+                      Lizaboni Street, Songea - Ruvuma, Tanzania
                     </p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function ContactPage() {
                   width="100%"
                   height="100%"
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=Makole+Street,+Songea - Ruvuma,+Tanzania&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Makole+Street,+Lizaboni Street, Songea - Ruvuma,+Tanzania&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   frameBorder="0"
                   scrolling="no"
                   marginHeight={0}
