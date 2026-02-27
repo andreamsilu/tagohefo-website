@@ -49,7 +49,7 @@ export function Header() {
             </a>
             <a href="tel:+255743330373" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
               <FaPhoneAlt className="text-[16px]" />
-              <span>+255 743 330 373</span>
+              <span>+255 677 707 519</span>
             </a>
           </div>
 

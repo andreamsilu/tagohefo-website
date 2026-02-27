@@ -101,7 +101,7 @@ export default function DonatePage() {
                   <div className="bg-white p-4 rounded-xl border border-gray-100 flex items-center justify-between">
                     <div>
                       <p className="text-sm text-[#618986] font-bold uppercase tracking-wider mb-1">M-Pesa</p>
-                      <p className="text-[#111817] font-mono text-xl font-bold">+255 743 330 373</p>
+                      <p className="text-[#111817] font-mono text-xl font-bold">+255 677 707 519</p>
                     </div>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="https://logo.clearbit.com/vodacom.co.tz" alt="M-Pesa" className="h-10 w-auto object-contain rounded" />
