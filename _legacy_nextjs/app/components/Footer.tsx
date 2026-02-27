@@ -99,7 +99,7 @@ export function Footer() {
                 <span>
                   Makole Street,
                   <br />
-                  Dodoma, Tanzania
+                  Songea - Ruvuma, Tanzania
                 </span>
               </li>
               <li className="flex items-center gap-3">
