@@ -272,6 +272,17 @@ footer a:hover {
     background-color: rgba(0,0,0,0.1);
 }
 
+/* Leadership org chart: clearer tree spacing and connectors */
+.org-chart-tree .org-connector-vertical {
+    height: 48px;
+    flex-shrink: 0;
+}
+.org-chart-tree .org-connector-horizontal {
+    height: 2px;
+    background-color: rgba(0,0,0,0.15);
+    min-width: 200px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     /* Typography Adjustments */
